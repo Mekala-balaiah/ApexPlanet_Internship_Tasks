@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px;
+            background-color: rgb(140, 215, 248);
+    }
+    #quiz-container { max-width: 600px; margin: auto; }
+    .question { font-size: 20px; margin-bottom: 10px; }
+    .answers button {
+      display: block;
+      background-color: rgb(255, 174, 174);
+      margin: 5px 0;
+      border-radius: 40px;
+      padding: 10px;
+      width: 100%;
+    }
+    .result { margin-top: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div id="quiz-container">
+    <div class="question" id="question">Loading question...</div>
+    <div class="answers" id="answers"></div>
+    <div class="result" id="result"></div>
+    <button onclick="loadQuestion()">Next Question</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
